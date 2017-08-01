@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grade Average</title>
+</head>
+<body>
+
+<h1>Grade Average</h1>
+
+<script>
+var number= prompt("Please enter number of students");
+var numStudents= parseInt(number);
+var testScores= new Array(numStudents);
+var sum=0;
+
+	for (var i = 0; i<testScores.length; i++)
+
+{
+	var k = prompt("Please enter a test score");
+	testScores[i]=parseFloat(k);
+	sum=sum+testScores[i];
+}
+
+var avg=sum/numStudents;
+document.write("The average test score is "+ avg)	
+</script>
+
+</body>
+</html>
